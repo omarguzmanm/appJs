@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Insertamos
             miNodoCardBody.appendChild(miNodoImagen);
             miNodoCardBody.appendChild(miNodoTitle);
-            miNodoCardBody.appendChild(miNodoPrecio)
+            miNodoCardBody.appendChild(miNodoPrecio);
             miNodoCardBody.appendChild(miNodoBoton);
             miNodo.appendChild(miNodoCardBody);
             DOMitems.appendChild(miNodo);
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /**
     * Dibuja todos los productos guardados en el carrito
     */
-    funcion renderizarCarrito() {
+    function renderizarCarrito() {
         // Vaciamos todo el html
         DOMcarrito.textContent = '';
         // Quitamos los duplicados
