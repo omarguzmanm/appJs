@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             miNodoImagen.setAttribute('src', info.imagen);
             // Precio
             const miNodoPrecio = document.createElement('p');
-            miNodoPrecio.classList.add('card-text');
+            miNodoPrecio.classList.add('card-text')
             miNodoPrecio.textContent = `${divisa}${info.precio}`;
             // Boton 
             const miNodoBoton = document.createElement('button');
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Insertamos
             miNodoCardBody.appendChild(miNodoImagen);
             miNodoCardBody.appendChild(miNodoTitle);
-            miNodoCardBody.appendChild(miNodoPrecio);
+            miNodoCardBody.appendChild(miNodoPrecio)
             miNodoCardBody.appendChild(miNodoBoton);
             miNodo.appendChild(miNodoCardBody);
             DOMitems.appendChild(miNodo);
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /**
     * Dibuja todos los productos guardados en el carrito
     */
-    function renderizarCarrito() {
+    funcion renderizarCarrito() {
         // Vaciamos todo el html
         DOMcarrito.textContent = '';
         // Quitamos los duplicados
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
         miLocalStorage.setItem('carrito', JSON.stringify(carrito));
     }
 
-    function cargarCarritoDeLocalStorage () {
+    function cargarCarritoDeLocalStorage ( {
         // ¿Existe un carrito previo guardado en LocalStorage?
         if (miLocalStorage.getItem('carrito') !== null) {
             // Carga la información
